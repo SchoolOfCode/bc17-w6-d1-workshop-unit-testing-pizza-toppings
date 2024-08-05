@@ -18,7 +18,7 @@
  */
 
 ///* calculate('+', 9, 10); // should return 19
-export function calculate(operator, firstNumber, secondNumber) {
+export default function calculate(operator, firstNumber, secondNumber) {
   switch (operator) {
     case "+":
       return firstNumber + secondNumber;
