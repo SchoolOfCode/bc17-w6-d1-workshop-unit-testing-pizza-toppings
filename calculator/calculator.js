@@ -16,6 +16,8 @@
  * calculate('🍕', -41414, 2); // should throw an error since '🍕' is not a supported operator
  * ```
  */
+
+///* calculate('+', 9, 10); // should return 19
 export function calculate(operator, firstNumber, secondNumber) {
   switch (operator) {
     case "+":
@@ -33,3 +35,5 @@ export function calculate(operator, firstNumber, secondNumber) {
       throw new Error(`Unsupported operator ${operator}`);
   }
 }
+//console.log(calculate("-", 8, 2));
+///* calculate('+', 9, 10); // should return 19
