@@ -31,6 +31,7 @@ test("Using calculator to square 2, equals 4", () => {
   expect(calculate("sq", 2, 5)).toBe(4);
 });
 
-test("Using calculator to divide 10 by 1, equals 10", () => {
-  expect(calculate("🍕", 10, 1)).toBe();
+test("expect an error as the operator is not supported", () => {
+  expect(() => calculate("🍕", 10, 1)).toThrowError('operator');
 });
+//calculate('🍕', -41414, 2); // should throw an error since '🍕' is not a supported operator

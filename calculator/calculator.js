@@ -36,4 +36,3 @@ export default function calculate(operator, firstNumber, secondNumber) {
   }
 }
 //console.log(calculate("-", 8, 2));
-///* calculate('+', 9, 10); // should return 19
